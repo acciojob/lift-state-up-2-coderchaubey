@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Child from './Child';
+import Child from './ChildComponent';
 
 function Parent() {
    const [inputValue,setInputValue]=useState('');
