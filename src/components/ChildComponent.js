@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Child({setInputValue}) {
+const Child = ({setInputValue}) => {
   return (
     <div>
         <h1>Child Component</h1>

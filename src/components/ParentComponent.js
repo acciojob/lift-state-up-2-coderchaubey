@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Child from './ChildComponent';
 
-function Parent() {
+const Parent= () => {
    const [inputValue,setInputValue]=useState('');
   return (
     <div>
