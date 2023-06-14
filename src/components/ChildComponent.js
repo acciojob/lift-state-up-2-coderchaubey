@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Child = ({setInputValue}) => {
+const ChildComponent = ({inputValue,setInputValue}) => {
   return (
-    <div>
-        <h1>Child Component</h1>
-      <input type="text" onChange={(event)=>setInputValue(event.target.value)}/>
+    <div className="child">
+    <h2>Child Component</h2>
+    <input type="text" onChange={(e) => {
+        setInputValue(e.target.value);
+    }} value={inputValue} />
     </div>
   )
 }
 
-export default Child
+export default ChildComponent

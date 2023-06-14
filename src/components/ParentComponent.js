@@ -1,16 +1,15 @@
 import React,{useState} from 'react'
-import Child from './ChildComponent';
+import ChildComponent from './ChildComponent';
 
-const Parent= () => {
+const ParentComponent= () => {
    const [inputValue,setInputValue]=useState('');
   return (
-    <div>
-      <h1>Parent Component</h1>
-      <p>{inputValue}</p>
-      <Child setInputValue={setInputValue} />
-      
-    </div>
+    <div className="parent">
+    <h1>Parent Component</h1>
+    {inputValue && <p>{inputValue}</p>}
+    <ChildComponent inputValue={inputValue} setInputValue={setInputValue} />
+</div>
   )
 }
 
-export default Parent
+export default ParentComponent
