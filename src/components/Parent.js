@@ -4,10 +4,10 @@ import Child from './Child';
 function Parent() {
    const [inputValue,setInputValue]=useState('');
   return (
-    <div className='Parent'>
+    <div className='parent'>
       <h1>Parent Component</h1>
       <p>{inputValue}</p>
-      <Child setInputValue={setInputValue} />
+      <Child inputValue={inputValue} setInputValue={setInputValue} />
       
     </div>
   )

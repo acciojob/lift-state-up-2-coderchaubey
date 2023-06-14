@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Child = ({setInputValue}) => {
+const Child = ({inputValue,setInputValue}) => {
   return (
-    <div className='Child'>
+    <div className='child'>
         <h1>Child Component</h1>
-      <input type="text" onChange={(event)=>setInputValue(event.target.value)}/>
+      <input type="text" value={inputValue} onChange={(event)=>setInputValue(event.target.value)}/>
     </div>
   )
 }
